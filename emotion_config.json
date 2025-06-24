@@ -1,0 +1,30 @@
+{
+  "data": {
+    "training_files": "emotion_dataset_tdm/train.list",
+    "validation_files": "emotion_dataset_tdm/val.list",
+    "n_emotions": 7,
+    "emotion_map": {
+      "neutral": 0,
+      "happy": 1,
+      "sad": 2,
+      "angry": 3,
+      "depressed": 4,
+      "surprised": 5,
+      "fearful": 6
+    },
+    "language": "KR",
+    "segment_length": 10
+  },
+  "model": {
+    "n_emotions": 7,
+    "emotion_channels": 256
+  },
+  "training": {
+    "batch_size": 16,
+    "learning_rate": 2e-4,
+    "epochs": 1000,
+    "save_interval": 1000,
+    "eval_interval": 500,
+    "log_interval": 200
+  }
+}
